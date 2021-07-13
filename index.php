@@ -2,11 +2,11 @@
 include_once 'common.php';
 // VALIDATION OF SOME FIELDS IN FORMS
 //====================================
-require "./validations.php"; 
+require "./validations.php";
 //====================================
 // DELETE ALL CFG FILES FROM FOLDER
 // ===================================
-require "./delete_old_files.php"; 
+require "./delete_old_files.php";
 // ===================================
 
 if (!isset($_GET[lang])) { echo "<meta http-equiv=\"refresh\" content=\"0; url=./index.php?lang=en\"/>"; }
@@ -37,13 +37,13 @@ if (!isset($_GET[lang])) { echo "<meta http-equiv=\"refresh\" content=\"0; url=.
 
 <div>
 
-<?php 
+<?php
 
 ?>
 
 <div id="languages">
 <a href="index.php?lang=en"><img src="images/en.png" /></a>
-<?php // <a href="index.php?lang=de"><img src="images/de.png" /></a> ?>
+<a href="index.php?lang=ru"><img src="images/ru.png" /></a>
 <a href="index.php?lang=es"><img src="images/es.png" /></a>
 </div>
 
@@ -64,7 +64,7 @@ if (!isset($_GET[lang])) { echo "<meta http-equiv=\"refresh\" content=\"0; url=.
 
 <img src="./media/yealink_logo.png" alt="" style="width:200px;height:45px;"><br><br>
 
-<form name=formyealink action="upload.php<?php echo "?lang=".$_GET['lang'].""; ?>" method="post" enctype="multipart/form-data"> 
+<form name=formyealink action="upload.php<?php echo "?lang=".$_GET['lang'].""; ?>" method="post" enctype="multipart/form-data">
 
 <style type="text/css">
 
@@ -110,8 +110,8 @@ body { background: #f2f2f2 !important; }
   </tr>
   <tr>
     <th class="tg-yw4l" colspan="2"><center><input class="btn btn-primary btn-block" type="submit" value="<?php echo $lang['SUBMIT']; ?>" onclick="return ValidateIPaddress()"></center></td>
-    
-  </tr> 
+
+  </tr>
 
 </table>
 <div>
