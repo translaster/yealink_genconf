@@ -18,6 +18,7 @@
 <div id="languages">
 <a href="doc.php?lang=en"><img src="../images/en.png" /></a>
 <?php // <a href="index.php?lang=de"><img src="images/de.png" /></a> ?>
+<a href="doc.php?lang=ru"><img src="../images/ru.png" /></a>
 <a href="doc.php?lang=es"><img src="../images/es.png" /></a>
 </div>
 <div>
