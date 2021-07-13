@@ -82,7 +82,7 @@ body { background: #f2f2f2 !important; }
   </tr>
   <tr>
     <td valign="center"><?php echo $lang['MODEL']; ?></td>
-    <td class="tg-yw4l"><select class="form-control input-sm" name="phone_model"required><option value=""><option value="t20">Yealink T-20</option><option value="t21e2">Yealink T-21 e2</option><option value="t23">Yealink T-23</option><option value="t27">Yealink T-27</option><option value="t42">Yealink T-42</option><option value="w56">Yealink W-56 DECT</option></select></td>
+    <td class="tg-yw4l"><select class="form-control input-sm" name="phone_model"required><option value=""><option value="t19e2">Yealink T-19 E2</option><option value="t20">Yealink T-20</option><option value="t21e2">Yealink T-21 e2</option><option value="t23">Yealink T-23</option><option value="t27">Yealink T-27</option><option value="t42">Yealink T-42</option><option value="w56">Yealink W-56 DECT</option></select></td>
   </tr>
   <tr>
     <td valign="center"><?php echo $lang['SIP_PASS']; ?></td>
