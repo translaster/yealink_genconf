@@ -7,24 +7,24 @@ Language: Russian
 
 $lang = array();
 
-$lang['PAGE_TITLE'] = 'Yealink config file generator tool';
-$lang['HEADER_TITLE'] = '<h6>MAC ORIENTED config file generator tool<br>for Yealink IP phones</h6>';
+$lang['PAGE_TITLE'] = 'Инструмент создания файлов конфигов для Yealink';
+$lang['HEADER_TITLE'] = '<h6>MAC ориентированный инструмент создания файлов конфигов<br>для IP телефонов Yealink</h6>';
 
 $lang['HELP'] = ' Помощь и документация';
 
 // Menu
 
-$lang['MENU_HOME'] = 'Home';
-$lang['MENU_ABOUT_US'] = 'About Us';
-$lang['MENU_OUR_PRODUCTS'] = 'Our products';
-$lang['MENU_CONTACT_US'] = 'Contact Us';
-$lang['MENU_ADVERTISE'] = 'Advertise';
-$lang['MENU_SITE_MAP'] = 'Site Map';
+$lang['MENU_HOME'] = 'Домой';
+$lang['MENU_ABOUT_US'] = 'О программе';
+$lang['MENU_OUR_PRODUCTS'] = 'Наши продукты';
+$lang['MENU_CONTACT_US'] = 'Наши контакты';
+$lang['MENU_ADVERTISE'] = 'Реклама';
+$lang['MENU_SITE_MAP'] = 'Карта сайта';
 
 //My Vars HOME PAGE
 
 $lang['MODEL'] = 'Модель:';
-$lang['SIP_PASS'] = 'SIP password: &nbsp&nbsp';
+$lang['SIP_PASS'] = 'Пароль SIP: &nbsp&nbsp';
 $lang['SERVER_IP'] = 'IP сервера:';
 $lang['SERVER_NM'] = 'Сет.маска:';
 $lang['SERVER_GW'] = 'Шлюз:';
@@ -35,36 +35,36 @@ $lang['BACK'] = ' Назад ';
 
 //My Vars PROCEDED DATA PAGE
 
-$lang['MSG1'] = 'Procesed file!';
-$lang['CREATED_FILE'] = 'Created config file';
+$lang['MSG1'] = 'Файл обработан!';
+$lang['CREATED_FILE'] = 'Создание файла конфигурации';
 $lang['EXTEN_MSG'] = 'EXT: ';
-$lang['IP_MSG'] = 'IP addr: ';
-$lang['CREATEDMSG1'] = 'Created ';
-$lang['CREATEDMSG2'] = ' configuration files for Yealink ';
-$lang['ZIPPED'] = 'Download Zipped files (.zip format) ';
-$lang['HERE'] = ' HERE ';
+$lang['IP_MSG'] = 'IP-адрес: ';
+$lang['CREATEDMSG1'] = 'Создание ';
+$lang['CREATEDMSG2'] = ' файлов конфигурации для Yealink ';
+$lang['ZIPPED'] = 'Скачать запакованные файлы (формат .zip) ';
+$lang['HERE'] = ' ЗДЕСЬ ';
 
 
 //Alerts
 
-$lang['ALERT_GW_IP'] = 'INVALID GATEWAY AND SERVER IP ADDRESS';
-$lang['ALERT_IP'] = 'INVALID SERVER IP VALUE';
-$lang['ALERT_GW'] = 'INVALID GATEWAY VALUE';
+$lang['ALERT_GW_IP'] = 'НЕВЕРНЫЙ ШЛЮЗ И IP АДРЕС СЕРВЕРА';
+$lang['ALERT_IP'] = 'НЕВЕРНОЕ ЗНАЧЕНИЕ IP СЕРВЕРА';
+$lang['ALERT_GW'] = 'НЕВЕРНОЕ ЗНАЧЕНИЕ ШЛЮЗА';
 
 //errors
 
-$lang['ROW'] = ' IN ROW # ';
+$lang['ROW'] = ' В СТРОКЕ # ';
 $lang['BLANK'] = "&nbsp &nbsp &nbsp &nbsp" ;
 $lang['FIELDS_ERR'] = ' ';
 $lang['EMPTY'] = ' &nbsp &nbsp &nbsp EMPTY ';
-$lang['ALL_EMPTY'] = ' ALL FIELDS ARE EMPTY ';
-$lang['ERR_MSG'] = 'Open CSV file and <b>FIX</b> described errors';
+$lang['ALL_EMPTY'] = ' ВСЕ ПОЛЯ ПУСТЫ ';
+$lang['ERR_MSG'] = 'Откройте файл CSV и <b>ИСПРАВЬТЕ</b> указанные ошибки';
 
 //fields of CSV FILE
 
-$lang['IP_PHONE'] = 'IP Address, ';
-$lang['MAC_PHONE'] = 'MAC Address, ';
-$lang['EXT_PHONE'] = 'Extension, ';
+$lang['IP_PHONE'] = 'IP адреса, ';
+$lang['MAC_PHONE'] = 'MAC адреса, ';
+$lang['EXT_PHONE'] = 'Внутр.номер, ';
 
 //doc
 
@@ -80,18 +80,17 @@ jose@marcano.net.ve<br>
 Apache 2.0 Licence<br>
 ============================================================<br>
 <br>
-
-This simple tool is intended to facilitate the process of automatic configuration in Yealink ip telephones. In general business scenarios where there is a large number of phones to install this procedure is necessary since the manual or web configuration of each terminal is repetitive and delays the process a lot. Each Yealink phone has an assigned MAC number, and this tool, by providing the necessary data, generates a .cfg file of UNIQUE configuration for each telephone. that after turning on and connecting the phone to the network it locates its unique configuration file and applies it in a few seconds, without the need to make manual adjustments on each device<br>
+Этот простой инструмент предназначен для облегчения процесса автоматической настройки IP-телефонов Yealink. В общих бизнес-сценариях, когда требуется установить большое количество телефонов, эта процедура необходима, поскольку ручная или веб-конфигурация каждого устройства повторяется и сильно задерживает процесс. Каждому телефону Yealink присвоен MAC-адрес и этот инструмент, предоставляя необходимые данные, создает файл .cfg УНИКАЛЬНОЙ конфигурации для каждого телефона. что после включения и подключения телефона к сети он находит свой уникальный файл конфигурации и применяет его за несколько секунд, без необходимости вручную вносить настройки на каждом устройстве<br>
 <br>
 The process is the following:<br>
 <br>
-1- A CSV file is needed <br>
-(Libre Office can be used) with three columns in the following order:<br>
-MAC, Extension Number and IP<br>
+1- Необходим файл CSV <br>
+(Можно использовать Libre Office) с тремя столбцами в следующем порядке:<br>
+MAC, Внутренний номер и IP<br>
 <br>
 <img src="../images/csv.png" alt="CSV File"><br>
 <br>
-<b>SAMPLE FILE</b> can be downloaded <b><a href="../sample/file.csv">HERE</a></b><br>
+<b>ПРОСТОЙ ФАЙЛ</b> может быть загружен <b><a href="../sample/file.csv">ЗДЕСЬ</a></b><br>
 <br>
 The MAC collection process of all the phones is easier using a USB bar code reader,<br>
 since each phone in its box and on the back has a sticker with this data.<br>
@@ -116,7 +115,7 @@ since each phone in its box and on the back has a sticker with this data.<br>
 TECHNICAL DATA:<br>
 ====================================================================================================
 <br>
-In this version it is possible to choose between four device models:<br>
+В этой версии можно выбрать одну из четырех моделей устройств:<br>
 <br>
 Yealink T-20<br>
 Yealink T21-E2<br>
