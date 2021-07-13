@@ -72,7 +72,7 @@ $lang['DOC'] =
 
 '
 ============================================================<br>
-<b>MAC ORIENTED config file generator tool for Yealink IP phones </b><br>
+<b>MAC ориентированный инструмент создания файлов конфигов для IP телефонов Yealink</b><br>
 ============================================================<br>
 Author:<br>
 Jose Miguel Marcano Mendoza<br>
@@ -82,7 +82,7 @@ Apache 2.0 Licence<br>
 <br>
 Этот простой инструмент предназначен для облегчения процесса автоматической настройки IP-телефонов Yealink. В общих бизнес-сценариях, когда требуется установить большое количество телефонов, эта процедура необходима, поскольку ручная или веб-конфигурация каждого устройства повторяется и сильно задерживает процесс. Каждому телефону Yealink присвоен MAC-адрес и этот инструмент, предоставляя необходимые данные, создает файл .cfg УНИКАЛЬНОЙ конфигурации для каждого телефона. что после включения и подключения телефона к сети он находит свой уникальный файл конфигурации и применяет его за несколько секунд, без необходимости вручную вносить настройки на каждом устройстве<br>
 <br>
-The process is the following:<br>
+Процесс заключается в следующем:<br>
 <br>
 1- Необходим файл CSV <br>
 (Можно использовать Libre Office) с тремя столбцами в следующем порядке:<br>
@@ -92,27 +92,26 @@ MAC, Внутренний номер и IP<br>
 <br>
 <b>ПРОСТОЙ ФАЙЛ</b> может быть загружен <b><a href="../sample/file.csv">ЗДЕСЬ</a></b><br>
 <br>
-The MAC collection process of all the phones is easier using a USB bar code reader,<br>
-since each phone in its box and on the back has a sticker with this data.<br>
+Процесс сбора MAC всех телефонов проще с помощью USB-считывателя штрих-кодов,<br>
+так как каждый телефон на коробке и на задней панели имеет наклейку с этими данными.<br>
 <br>
-2- Upload the CSV file to the WEB application and select the data in the form (this data is general for all the equipment contained in the file) as server IP address, SIP password, mask, gateway and VLAN (if applicable)<br>
+2 - Загрузите файл CSV в веб-приложение и выберите данные в форме (эти данные являются общими для всего оборудования, содержащегося в файле) в качестве IP-адреса сервера, пароля SIP, маски, шлюза и VLAN (если используется)<br>
 <br>
 <img src="../images/form_en.png" alt="Yealink config generator tool"><br>
 <br>
-3- Press the Submit button<br>
+3- Нажмите кнопку Принять<br>
 <br>
-- The next screen shows the result where it indicates the generated files and details of the extension and IP address assigned to each MAC.<br>
+- На следующем экране отображается результат, где указаны сгенерированные файлы и подробная информация о внутр.номере и IP-адресе, назначенных каждому MAC.<br>
 <br>
 <img src="../images/process_en.png" alt="Yealink config generator tool"><br>
-
 <br>
-- It allows to download all the generated configuration files of each phone contained in a compressed file (.zip)<br>
+- позволяет загружать сгенерированные файлы конфигурации каждого телефона, содержащиеся в сжатом файле (.zip)<br>
 <br>
-- The tool performs a check of empty fields in the three columns, if an error is detected, it must be corrected and the file re-uploaded
+- инструмент выполняет проверку пустых полей в трех столбцах и при обнаружении ошибки предлагает её исправить и повторно загрузить файл
 <br>
 ====================================================================================================
 <br>
-TECHNICAL DATA:<br>
+ТЕХНИЧЕСКИЕ ДАННЫЕ:<br>
 ====================================================================================================
 <br>
 В этой версии можно выбрать одну из четырех моделей устройств:<br>
@@ -123,12 +122,12 @@ Yealink T23<br>
 Yealink T42<br>
 
 <br>
-If you need to manipulate a specific configuration option, add a model.. etc, you can manually edit the files located in: cfg directory according to your needs, for example .. change the time zone (default is for Colombia), button assignment .. or other options general.
+Если вам нужно изменить определенный параметр конфигурации, добавьте модель.. и т.д., вы можете вручную отредактировать файлы, расположенные в каталоге: cfg, например, в соответствии с вашими потребностями .. измените часовой пояс (по умолчанию для Колумбии), назначение кнопок .. или другие общие параметры.
 <br>
-if you have questions or requeriments.. Please contact ME! :)
+если у вас есть вопросы или пожелания.. Пожалуйста, свяжитесь со МНОЙ! :)
 =========================================================<br>
 <br>
-This tool is created to be modified according to your needs, if you need help .. you need the code SOURCE write me and I will gladly take care of you
+Этот инструмент создан для изменения в соответствии с вашими потребностями, если вам нужна помощь .. вам нужен исходный код, напишите мне, и я с радостью позабочусь о вас
 =========================================================<br>
 jose@marcano.net.ve<br>
 =========================================================<br>
